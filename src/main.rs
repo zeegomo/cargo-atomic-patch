@@ -69,7 +69,7 @@ fn patch_manifest(manifest_path: &Path) -> Result<()> {
         &Crate {
             name: "atomic-core".into(),
             rename: Some("core".into()),
-            source: Source::Git("https://github.com/zeegomo/atomic-core".into()),
+            source: Source::CratesIo,
             features: vec!["critical-section".into()],
         },
     )?;
